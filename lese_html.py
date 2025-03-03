@@ -31,6 +31,6 @@ html_content = replace_placeholder(html_content, animal_html)
 #save the HTML-File
 save_html("animals.html", html_content)
 
-print("animals.html are created")
+
 
 
