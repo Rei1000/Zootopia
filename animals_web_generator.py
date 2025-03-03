@@ -8,6 +8,7 @@ def load_data(file_path):
 def print_animals_info(file_path):
     """ Liest die JSON-Daten und gibt Name, Diet, Location & Type aus """
     animals = load_data(file_path)
+    output_list = []
 
     for animal in animals:
         output = []
@@ -22,8 +23,6 @@ def print_animals_info(file_path):
             output.append(f"Type: {animal['type']}")
 
         if output:  # Nur ausgeben, wenn es Daten gibt
-            print("\n".join(output))
-            print("-" * 30)
+            output_list.append(f"<li>{'<br>'.join(output)}</li>")
 
-# Funktion aufrufen mit der JSON-Datei
-print_animals_info("animals_data.json")
+    return output_list
