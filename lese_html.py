@@ -1,4 +1,5 @@
 from animals_web_generator import print_animals_info
+print(print_animals_info("animals_data.json"))
 
 def load_template(template_datei):
     """ read HTML File and return it """
