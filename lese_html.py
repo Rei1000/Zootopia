@@ -18,10 +18,10 @@ def save_html(dateiname, content):
         file.write(content)
 
 # call the funktion to get the animal data
-output_list = print_animals_info("animals_data.json")
+#output_list = print_animals_info("animals_data.json")
 
 #make a string from the list
-animal_html = "\n".join(output_list)
+animal_html = print_animals_info("animals_data.json")
 
 # load HTML-Template
 html_content = load_template("animals_template.html")
